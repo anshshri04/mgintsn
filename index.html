@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>mgiftsn | Custom Gift Hampers & Handmade Bouquets by Shivi Khare</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Google Fonts: Playfair Display & Poppins -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;1,400&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              light: '#fdf6f0',
+              pink: '#f4baba',
+              rose: '#e07a7a',
+              dark: '#3f2b2b',
+              gold: '#c59b27'
+            }
+          },
+          fontFamily: {
+            serif: ['"Playfair Display"', 'serif'],
+            sans: ['"Poppins"', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-[#faf7f2] text-brand-dark font-sans antialiased">
+
+  <!-- TOP ANNOUNCEMENT BAR -->
+  <div class="bg-brand-rose text-white text-xs sm:text-sm py-2 px-4 text-center tracking-wider font-medium">
+    🌷 Turning emotions into beautiful gifts | Handcrafted with love by Shivi Khare
+  </div>
+
+  <!-- NAVBAR -->
+  <nav class="sticky top-0 z-40 bg-white/90 backdrop-blur-md shadow-sm border-b border-brand-pink/20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      <a href="#" class="flex flex-col">
+        <span class="font-serif text-3xl font-bold tracking-tight text-brand-rose">mgiftsn</span>
+        <span class="text-[10px] tracking-widest uppercase text-gray-500 font-semibold -mt-1">By Shivi Khare</span>
+      </a>
+
+      <!-- Desktop Links -->
+      <div class="hidden md:flex items-center space-x-8 font-medium text-sm">
+        <a href="#home" class="hover:text-brand-rose transition-colors">Home</a>
+        <a href="#products" class="hover:text-brand-rose transition-colors">Gift Collection</a>
+        <a href="#custom-hamper" class="hover:text-brand-rose transition-colors">Custom Hamper</a>
+        <a href="#contact" class="hover:text-brand-rose transition-colors">Contact Us</a>
+        <a href="https://www.instagram.com/mgiftsn/" target="_blank" class="text-pink-600 hover:scale-110 transition-transform text-lg">
+          <i class="fab fa-instagram"></i>
+        </a>
+      </div>
+
+      <!-- Admin Button -->
+      <div>
+        <button onclick="openAdminModal()" class="border border-brand-rose text-brand-rose hover:bg-brand-rose hover:text-white px-4 py-2 rounded-full text-xs font-semibold tracking-wider uppercase transition-all duration-300 flex items-center gap-2">
+          <i class="fas fa-lock"></i> Admin Panel
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section id="home" class="relative overflow-hidden py-16 lg:py-24 bg-gradient-to-b from-[#fff7f7] to-[#faf7f2]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      <div>
+        <span class="inline-block bg-brand-pink/30 text-brand-rose text-xs uppercase tracking-widest font-semibold px-3 py-1 rounded-full mb-4">
+          Handmade & Customized
+        </span>
+        <h1 class="font-serif text-4xl sm:text-5xl lg:text-6xl text-brand-dark leading-tight mb-6">
+          Custom Gift Hampers & Handmade Bouquets
+        </h1>
+        <p class="text-gray-600 text-base sm:text-lg mb-8 leading-relaxed">
+          Har emotion ko ek khoobsurat tohfe mein badalna hamara passion hai. Birthday, Anniversary ya kisi special lamhe ko banaiye hamesha ke liye yaadgaar.
+        </p>
+        <div class="flex flex-wrap gap-4">
+          <a href="#custom-hamper" class="bg-brand-rose text-white px-8 py-3.5 rounded-full font-medium hover:bg-[#cf6363] shadow-lg shadow-brand-rose/30 transition-all">
+            ✨ Make Custom Hamper
+          </a>
+          <a href="#products" class="bg-white text-brand-dark border border-gray-200 px-8 py-3.5 rounded-full font-medium hover:border-brand-rose transition-all">
+            Browse Gifts
+          </a>
+        </div>
+      </div>
+      <div class="relative">
+        <div class="w-full h-80 sm:h-96 rounded-3xl overflow-hidden shadow-2xl border-4 border-white transform rotate-1 hover:rotate-0 transition-transform duration-500">
+          <img src=https://i.postimg.cc/rsWbbNCs/842915150-18124563334763280-8081526788568889630-n.jpg" alt="Luxury Bouquet & Gifts" class="w-full h-full object-cover">
+        </div>
+        <div class="absolute -bottom-6 -left-6 bg-white p-4 rounded-2xl shadow-xl border border-gray-100 flex items-center gap-3">
+          <div class="w-12 h-12 rounded-full bg-brand-pink/30 flex items-center justify-center text-brand-rose text-xl">
+            🌷
+          </div>
+          <div>
+            <p class="text-xs text-gray-500 font-medium">Curated by</p>
+            <p class="font-serif font-bold text-sm">Shivi Khare</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRODUCTS / GIFTS SECTION -->
+  <section id="products" class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center max-w-2xl mx-auto mb-12">
+      <span class="text-brand-rose font-medium text-sm tracking-widest uppercase">Our Best Sellers</span>
+      <h2 class="font-serif text-3xl sm:text-4xl text-brand-dark mt-2">Gift Hampers & Bouquets</h2>
+      <p class="text-gray-500 text-sm mt-3">Aap direct WhatsApp par click karke order place kar sakte hain.</p>
+    </div>
+
+    <!-- Category Filter Buttons -->
+    <div class="flex justify-center flex-wrap gap-3 mb-10">
+      <button onclick="filterProducts('all')" class="filter-btn active-filter px-5 py-2 rounded-full text-xs font-semibold bg-brand-rose text-white">All Items</button>
+      <button onclick="filterProducts('Hamper')" class="filter-btn px-5 py-2 rounded-full text-xs font-semibold bg-white text-gray-600 border border-gray-200 hover:border-brand-rose">Gift Hampers</button>
+      <button onclick="filterProducts('Bouquet')" class="filter-btn px-5 py-2 rounded-full text-xs font-semibold bg-white text-gray-600 border border-gray-200 hover:border-brand-rose">Handmade Bouquets</button>
+      <button onclick="filterProducts('Custom')" class="filter-btn px-5 py-2 rounded-full text-xs font-semibold bg-white text-gray-600 border border-gray-200 hover:border-brand-rose">Special Boxes</button>
+    </div>
+
+    <!-- Dynamic Products Grid -->
+    <div id="productGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      <!-- Injected by JavaScript -->
+    </div>
+  </section>
+
+  <!-- CUSTOM ORDER SECTION -->
+  <section id="custom-hamper" class="py-20 bg-white border-y border-brand-pink/30">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6">
+      <div class="text-center mb-10">
+        <span class="text-brand-rose font-medium text-xs tracking-widest uppercase">Personalized Just For You</span>
+        <h2 class="font-serif text-3xl sm:text-4xl text-brand-dark mt-2">Apna Custom Hamper Design Karein 🎁</h2>
+        <p class="text-gray-500 text-sm mt-2">Apni pasand ke items aur budget likhein, Shivi Khare aapke hisab se hamper curate karengi!</p>
+      </div>
+
+      <form onsubmit="handleCustomOrder(event)" class="bg-[#faf7f2] p-8 sm:p-10 rounded-3xl shadow-sm border border-gray-100 space-y-6">
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+          <div>
+            <label class="block text-xs font-semibold text-gray-600 uppercase tracking-wider mb-2">Aapka Naam</label>
+            <input type="text" id="custName" required placeholder="Ex. Rahul Sharma" class="w-full bg-white border border-gray-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-brand-rose">
+          </div>
+          <div>
+            <label class="block text-xs font-semibold text-gray-600 uppercase tracking-wider mb-2">Occasion (Avsar)</label>
+            <select id="custOccasion" class="w-full bg-white border border-gray-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-brand-rose">
+              <option value="Birthday">Birthday</option>
+              <option value="Anniversary">Anniversary</option>
+              <option value="Proposal / Love">Valentine / Proposal</option>
+              <option value="Friendship">Friendship / Farewell</option>
+              <option value="Festival">Festival Celebration</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+          <div>
+            <label class="block text-xs font-semibold text-gray-600 uppercase tracking-wider mb-2">Aapka Budget (₹)</label>
+            <input type="number" id="custBudget" required placeholder="Ex. 1500" class="w-full bg-white border border-gray-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-brand-rose">
+          </div>
+          <div>
+            <label class="block text-xs font-semibold text-gray-600 uppercase tracking-wider mb-2">Gift Type Preference</label>
+            <select id="custType" class="w-full bg-white border border-gray-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-brand-rose">
+              <option value="Hamper + Bouquet Combo">Hamper + Bouquet Combo</option>
+              <option value="Handmade Bouquet Only">Handmade Bouquet Only</option>
+              <option value="Luxury Gift Box">Luxury Gift Box</option>
+              <option value="Custom Photo Gift">Customized Keepsake</option>
+            </select>
+          </div>
+        </div>
+
+        <div>
+          <label class="block text-xs font-semibold text-gray-600 uppercase tracking-wider mb-2">Specific Requirements / Message</label>
+          <textarea id="custNotes" rows="3" placeholder="Chocolates, customized note, specific flower color ya koi special request..." class="w-full bg-white border border-gray-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-brand-rose"></textarea>
+        </div>
+
+        <button type="submit" class="w-full bg-brand-rose hover:bg-[#c95f5f] text-white py-4 rounded-xl font-medium tracking-wide shadow-md transition-colors flex items-center justify-center gap-2">
+          <i class="fab fa-whatsapp text-lg"></i> Custom Order Request WhatsApp Par Bhejein
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <!-- CONTACT & FOOTER SECTION -->
+  <footer id="contact" class="bg-brand-dark text-white pt-16 pb-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-3 gap-12 border-b border-gray-700/60 pb-12">
+      <!-- Col 1 -->
+      <div>
+        <h3 class="font-serif text-2xl font-bold text-white mb-2">mgiftsn</h3>
+        <p class="text-xs text-brand-pink tracking-widest uppercase mb-4">Founder: Shivi Khare</p>
+        <p class="text-gray-300 text-sm leading-relaxed">
+          Turning emotions into beautiful gifts 🌷. Har hamper pyaar aur dhyan se handmade curate kiya jata hai.
+        </p>
+      </div>
+
+      <!-- Col 2: Quick Links -->
+      <div>
+        <h4 class="font-semibold text-sm tracking-wider uppercase text-white mb-4">Quick Links</h4>
+        <ul class="space-y-2 text-sm text-gray-300">
+          <li><a href="#home" class="hover:text-brand-pink">Home</a></li>
+          <li><a href="#products" class="hover:text-brand-pink">Gift Hampers</a></li>
+          <li><a href="#custom-hamper" class="hover:text-brand-pink">Make Custom Hamper</a></li>
+          <li><a href="https://www.instagram.com/mgiftsn/" target="_blank" class="hover:text-brand-pink">Follow on Instagram</a></li>
+        </ul>
+      </div>
+
+      <!-- Col 3: Instagram & Contact -->
+      <div>
+        <h4 class="font-semibold text-sm tracking-wider uppercase text-white mb-4">Connect With Shivi Khare</h4>
+        <p class="text-sm text-gray-300 mb-4">Naye designs aur real pictures ke liye hamara Instagram zaroor follow karein:</p>
+        
+        <a href="https://www.instagram.com/mgiftsn/" target="_blank" class="inline-flex items-center gap-3 bg-gradient-to-r from-pink-500 via-rose-500 to-yellow-500 px-5 py-2.5 rounded-full text-white font-medium text-sm hover:opacity-90 transition-opacity mb-4">
+          <i class="fab fa-instagram text-lg"></i> @mgiftsn on Instagram
+        </a>
+
+        <div class="text-xs text-gray-400 mt-2">
+          WhatsApp Support: <span class="text-white font-medium">+91 7879978828</span>
+        </div>
+        <h5 class="text-xs">Made & Developed by @AnshXploit</h5>
+
+          </span> 
+        </div>
+      </div>
+    </div>
+
+    <div class="max-w-7xl mx-auto px-4 text-center mt-8 text-xs text-gray-500">
+      &copy; <span id="year"></span> mgiftsn by Shivi Khare. All rights reserved.
+    </div>
+  </footer>
+
+  <!-- ==================== ADMIN LOGIN MODAL ==================== -->
+  <div id="loginModal" class="fixed inset-0 bg-black/60 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
+    <div class="bg-white rounded-3xl p-6 sm:p-8 w-full max-w-sm shadow-2xl relative">
+      <button onclick="closeAdminModal()" class="absolute top-4 right-4 text-gray-400 hover:text-gray-600">
+        <i class="fas fa-times text-lg"></i>
+      </button>
+      <div class="text-center mb-6">
+        <div class="w-12 h-12 bg-brand-pink/20 text-brand-rose rounded-full flex items-center justify-center mx-auto mb-3 text-xl">
+          <i class="fas fa-user-shield"></i>
+        </div>
+        <h3 class="font-serif text-2xl font-bold">Admin Login</h3>
+        <p class="text-xs text-gray-500 mt-1">mgiftsn dashboard access karein</p>
+      </div>
+      <form onsubmit="handleLogin(event)" class="space-y-4">
+        <div>
+          <label class="block text-xs font-semibold text-gray-600 uppercase mb-1">Username</label>
+          <input type="text" id="adminUser" required placeholder="admin" class="w-full border border-gray-200 rounded-xl px-4 py-2.5 text-sm focus:outline-none focus:border-brand-rose">
+        </div>
+        <div>
+          <label class="block text-xs font-semibold text-gray-600 uppercase mb-1">Password</label>
+          <input type="password" id="adminPass" required placeholder="••••••••" class="w-full border border-gray-200 rounded-xl px-4 py-2.5 text-sm focus:outline-none focus:border-brand-rose">
+        </div>
+        <button type="submit" class="w-full bg-brand-rose text-white py-3 rounded-xl font-medium text-sm hover:bg-[#cf6363] transition-colors">
+          Sign In
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- ==================== ADMIN DASHBOARD MODAL ==================== -->
+  <div id="adminDashboard" class="fixed inset-0 bg-black/60 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4 overflow-y-auto">
+    <div class="bg-white rounded-3xl p-6 sm:p-8 w-full max-w-3xl shadow-2xl relative max-h-[90vh] overflow-y-auto">
+      <div class="flex justify-between items-center border-b pb-4 mb-6">
+        <div>
+          <h3 class="font-serif text-2xl font-bold">Store Management Panel</h3>
+          <p class="text-xs text-gray-500">Welcome, Shivi! Yahan naye hampers add karein aur pricing badlein.</p>
+        </div>
+        <button onclick="closeDashboard()" class="text-gray-400 hover:text-gray-700 text-xl font-bold">&times;</button>
+      </div>
+
+      <!-- Add Product Form -->
+      <form onsubmit="addNewProduct(event)" class="bg-brand-light p-5 rounded-2xl mb-8 space-y-4 border border-brand-pink/30">
+        <h4 class="font-bold text-sm text-brand-dark flex items-center gap-2">
+          <i class="fas fa-plus-circle text-brand-rose"></i> Naya Gift / Hamper List Karein
+        </h4>
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+          <div>
+            <label class="block text-xs font-medium text-gray-600 mb-1">Hamper Name</label>
+            <input type="text" id="prodName" required placeholder="e.g., Luxury Rose Hamper" class="w-full bg-white border border-gray-200 rounded-lg px-3 py-2 text-xs">
+          </div>
+          <div>
+            <label class="block text-xs font-medium text-gray-600 mb-1">Price (₹)</label>
+            <input type="number" id="prodPrice" required placeholder="1499" class="w-full bg-white border border-gray-200 rounded-lg px-3 py-2 text-xs">
+          </div>
+          <div>
+            <label class="block text-xs font-medium text-gray-600 mb-1">Category</label>
+            <select id="prodCategory" class="w-full bg-white border border-gray-200 rounded-lg px-3 py-2 text-xs">
+              <option value="Hamper">Gift Hamper</option>
+              <option value="Bouquet">Handmade Bouquet</option>
+              <option value="Custom">Custom Box</option>
+            </select>
+          </div>
+        </div>
+        <div>
+          <label class="block text-xs font-medium text-gray-600 mb-1">Image URL (Instagram post image ya direct photo link)</label>
+          <input type="url" id="prodImage" required placeholder="https://..." class="w-full bg-white border border-gray-200 rounded-lg px-3 py-2 text-xs">
+        </div>
+        <div>
+          <label class="block text-xs font-medium text-gray-600 mb-1">Short Description</label>
+          <input type="text" id="prodDesc" placeholder="Includes scented candle, imported chocolates & flowers" class="w-full bg-white border border-gray-200 rounded-lg px-3 py-2 text-xs">
+        </div>
+        <button type="submit" class="bg-brand-rose text-white px-5 py-2.5 rounded-lg text-xs font-semibold hover:bg-[#c95f5f] transition-all">
+          Product Add Karein
+        </button>
+      </form>
+
+      <!-- Existing Products List -->
+      <h4 class="font-bold text-sm text-brand-dark mb-4">Existing Products List:</h4>
+      <div id="adminProductList" class="space-y-3">
+        <!-- Rendered by JS -->
+      </div>
+    </div>
+  </div>
+
+  <!-- JAVASCRIPT LOGIC -->
+  <script>
+    // WhatsApp Number (Aap yahan apna 10-digit number bina '+' ke likhein)
+    const WHATSAPP_NUMBER = "917879978828"; 
+
+    // Admin Credentials
+    const ADMIN_CREDENTIALS = {
+      user: "admin",
+      pass: "shivi@mgiftsn"
+    };
+
+    // Default Demo Products
+    const defaultProducts = [
+      {
+        id: 1,
+        name: "Blushing Rose & Chocolate Hamper",
+        category: "Hamper",
+        price: 1599,
+        image: "https://images.unsplash.com/photo-1549465220-1a8b9238cd48?q=80&w=600&auto=format&fit=crop",
+        desc: "Handcrafted box with luxury chocolates, scented candle & dried roses."
+      },
+      {
+        id: 2,
+        name: "Elegance Ribbon Bouquet",
+        category: "Bouquet",
+        price: 899,
+        image: "https://images.unsplash.com/photo-1582794543139-8ac9cb0f7b11?q=80&w=600&auto=format&fit=crop",
+        desc: "Everlasting handmade bouquet customized with satin ribbon flowers."
+      },
+      {
+        id: 3,
+        name: "Personalized Anniversary Treasure Box",
+        category: "Custom",
+        price: 2499,
+        image: "https://images.unsplash.com/photo-1513151233558-d860c5398176?q=80&w=600&auto=format&fit=crop",
+        desc: "Custom polaroids, memory notes, lights & delicious treats."
+      }
+    ];
+
+    // Initialize LocalStorage
+    function getProducts() {
+      const stored = localStorage.getItem('mgiftsn_products');
+      if (!stored) {
+        localStorage.setItem('mgiftsn_products', JSON.stringify(defaultProducts));
+        return defaultProducts;
+      }
+      return JSON.parse(stored);
+    }
+
+    function saveProducts(prods) {
+      localStorage.setItem('mgiftsn_products', JSON.stringify(prods));
+      renderStoreProducts();
+      renderAdminProducts();
+    }
+
+    // Render Products on Frontend
+    let activeFilter = 'all';
+
+    function renderStoreProducts() {
+      const products = getProducts();
+      const grid = document.getElementById('productGrid');
+      grid.innerHTML = '';
+
+      const filtered = activeFilter === 'all' 
+        ? products 
+        : products.filter(p => p.category === activeFilter);
+
+      if (filtered.length === 0) {
+        grid.innerHTML = `<div class="col-span-full text-center py-10 text-gray-500">Is category mein koi item nahi hai.</div>`;
+        return;
+      }
+
+      filtered.forEach(p => {
+        const waMsg = encodeURIComponent(`Hi Shivi! Mujhe mgiftsn se "${p.name}" (Price: ₹${p.price}) order karna hai.`);
+        const card = document.createElement('div');
+        card.className = "bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 flex flex-col justify-between group";
+        card.innerHTML = `
+          <div>
+            <div class="h-64 overflow-hidden relative">
+              <img src="${p.image}" alt="${p.name}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+              <span class="absolute top-4 right-4 bg-white/90 backdrop-blur-sm text-brand-dark px-3 py-1 rounded-full text-xs font-semibold shadow">
+                ${p.category}
+              </span>
+            </div>
+            <div class="p-6">
+              <h3 class="font-serif text-xl font-bold text-brand-dark mb-2">${p.name}</h3>
+              <p class="text-gray-500 text-xs mb-4 line-clamp-2">${p.desc || ''}</p>
+              <div class="text-xl font-bold text-brand-rose">₹${p.price}</div>
+            </div>
+          </div>
+          <div class="px-6 pb-6 pt-0">
+            <a href="https://wa.me/${WHATSAPP_NUMBER}?text=${waMsg}" target="_blank" class="w-full bg-[#faf7f2] hover:bg-brand-rose hover:text-white text-brand-dark border border-brand-pink/50 py-3 rounded-xl font-semibold text-xs tracking-wider uppercase transition-all duration-300 flex items-center justify-center gap-2">
+              <i class="fab fa-whatsapp text-green-600 group-hover:text-white text-sm"></i> Order via WhatsApp
+            </a>
+          </div>
+        `;
+        grid.appendChild(card);
+      });
+    }
+
+    function filterProducts(cat) {
+      activeFilter = cat;
+      document.querySelectorAll('.filter-btn').forEach(btn => {
+        btn.classList.remove('bg-brand-rose', 'text-white');
+        btn.classList.add('bg-white', 'text-gray-600');
+      });
+      event.target.classList.add('bg-brand-rose', 'text-white');
+      event.target.classList.remove('bg-white', 'text-gray-600');
+      renderStoreProducts();
+    }
+
+    // Custom Order Handler
+    function handleCustomOrder(e) {
+      e.preventDefault();
+      const name = document.getElementById('custName').value;
+      const occ = document.getElementById('custOccasion').value;
+      const budget = document.getElementById('custBudget').value;
+      const type = document.getElementById('custType').value;
+      const notes = document.getElementById('custNotes').value;
+
+      const message = `*Custom Hamper Inquiry - mgiftsn*%0A%0A` +
+        `👤 *Name:* ${name}%0A` +
+        `🎉 *Occasion:* ${occ}%0A` +
+        `💰 *Budget:* ₹${budget}%0A` +
+        `🎁 *Type:* ${type}%0A` +
+        `📝 *Special Notes:* ${notes || 'N/A'}`;
+
+      window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${message}`, '_blank');
+    }
+
+    // ============ ADMIN MODAL LOGIC ============
+    function openAdminModal() {
+      document.getElementById('loginModal').classList.remove('hidden');
+    }
+
+    function closeAdminModal() {
+      document.getElementById('loginModal').classList.add('hidden');
+    }
+
+    function handleLogin(e) {
+      e.preventDefault();
+      const u = document.getElementById('adminUser').value;
+      const p = document.getElementById('adminPass').value;
+
+      if (u === ADMIN_CREDENTIALS.user && p === ADMIN_CREDENTIALS.pass) {
+        closeAdminModal();
+        document.getElementById('adminDashboard').classList.remove('hidden');
+        renderAdminProducts();
+      } else {
+        alert("Galat Username ya Password! Kripya sahi details bharein.");
+      }
+    }
+
+    function closeDashboard() {
+      document.getElementById('adminDashboard').classList.add('hidden');
+    }
+
+    function renderAdminProducts() {
+      const list = document.getElementById('adminProductList');
+      const products = getProducts();
+      list.innerHTML = '';
+
+      products.forEach(p => {
+        const item = document.createElement('div');
+        item.className = "flex items-center justify-between p-3 bg-gray-50 border rounded-xl gap-4";
+        item.innerHTML = `
+          <div class="flex items-center gap-3">
+            <img src="${p.image}" class="w-12 h-12 rounded-lg object-cover">
+            <div>
+              <p class="font-bold text-xs text-gray-800">${p.name}</p>
+              <p class="text-[11px] text-gray-500">${p.category} | ₹${p.price}</p>
+            </div>
+          </div>
+          <div class="flex items-center gap-2">
+            <button onclick="editPrice(${p.id})" class="text-xs bg-gray-200 hover:bg-gray-300 text-gray-700 px-3 py-1.5 rounded-lg">
+              Edit Price
+            </button>
+            <button onclick="deleteProduct(${p.id})" class="text-xs bg-red-100 hover:bg-red-200 text-red-600 px-3 py-1.5 rounded-lg">
+              <i class="fas fa-trash"></i>
+            </button>
+          </div>
+        `;
+        list.appendChild(item);
+      });
+    }
+
+    function addNewProduct(e) {
+      e.preventDefault();
+      const name = document.getElementById('prodName').value;
+      const price = parseFloat(document.getElementById('prodPrice').value);
+      const category = document.getElementById('prodCategory').value;
+      const image = document.getElementById('prodImage').value;
+      const desc = document.getElementById('prodDesc').value;
+
+      const products = getProducts();
+      const newProd = {
+        id: Date.now(),
+        name,
+        price,
+        category,
+        image,
+        desc
+      };
+
+      products.push(newProd);
+      saveProducts(products);
+      e.target.reset();
+      alert("Naya hamper safaltapoorvak list ho gaya!");
+    }
+
+    function editPrice(id) {
+      const products = getProducts();
+      const item = products.find(p => p.id === id);
+      if (!item) return;
+
+      const newPrice = prompt(`"${item.name}" ka naya price enter karein (₹):`, item.price);
+      if (newPrice !== null && !isNaN(newPrice) && newPrice.trim() !== "") {
+        item.price = parseFloat(newPrice);
+        saveProducts(products);
+      }
+    }
+
+    function deleteProduct(id) {
+      if (confirm("Kya aap sach me is product ko hatana chahte hain?")) {
+        let products = getProducts();
+        products = products.filter(p => p.id !== id);
+        saveProducts(products);
+      }
+    }
+
+    // Set Copyright Year & Initial Render
+    document.getElementById('year').textContent = new Date().getFullYear();
+    renderStoreProducts();
+  </script>
+</body>
+</html>
